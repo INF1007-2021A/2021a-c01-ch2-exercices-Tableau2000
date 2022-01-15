@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    # TODO completer la fonction ici
+    for lettre in mot:
+        if 97 <= lettre <= 122:
+            mot += chr(ord(lettre) - 32)
     return mot
 
 
